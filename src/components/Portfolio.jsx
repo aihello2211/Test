@@ -5,13 +5,12 @@ import placeholder from "assets/placeholder.png";
 import loadmore from "assets/loadmore.png";
 import portfolio1 from "assets/portfolio1.png";
 import portfolio2 from "assets/portfolio2.png";
-import { motion } from "framer-motion";
-import { useScroll } from "./useScroll";
-import { portfolioAnimation } from "animations";
 function Portfolio() {
-  const [element, controls] = useScroll();
+
   return (
-    <Section id="portfolio" ref={element}>
+    <Section id="portfolio" 
+    // ref={element}
+    >
       <Title value="Portfolio" />
       <div className="background">
         <img src={portfolio1} alt="Design" className="design1" />
@@ -22,110 +21,54 @@ function Portfolio() {
         <h2>Check our super awesome portfolio</h2>
       </div>
       <div className="grid">
-        <motion.div
+        <div
           className="child-one grid-box"
-          variants={portfolioAnimation}
-          animate={controls}
-          transition={{
-            delay: 0.03,
-            type: "tween",
-            duration: 0.8,
-          }}
-          whileInView={{ opacity: 1 }}
+          
         >
           <img src={placeholder} alt="placeholder" />
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="child-two grid-box"
-          variants={portfolioAnimation}
-          animate={controls}
-          transition={{
-            delay: 0.03,
-            type: "tween",
-            duration: 0.8,
-          }}
-          viewport={{ once: true }}
+          
         >
           <img src={placeholder} alt="placeholder" />
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="child-three grid-box"
-          variants={portfolioAnimation}
-          animate={controls}
-          transition={{
-            delay: 0.03,
-            type: "tween",
-            duration: 0.8,
-          }}
-          viewport={{ once: true }}
+          
         >
           <img src={placeholder} alt="placeholder" />
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="child-four grid-box"
-          variants={portfolioAnimation}
-          animate={controls}
-          transition={{
-            delay: 0.03,
-            type: "tween",
-            duration: 0.8,
-          }}
-          viewport={{ once: true }}
+          
         >
           <img src={placeholder} alt="placeholder" />
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="child-five grid-box"
-          variants={portfolioAnimation}
-          animate={controls}
-          transition={{
-            delay: 0.03,
-            type: "tween",
-            duration: 0.8,
-          }}
-          viewport={{ once: true }}
+          
         >
           <img src={placeholder} alt="placeholder" />
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="child-six grid-box"
-          variants={portfolioAnimation}
-          animate={controls}
-          transition={{
-            delay: 0.03,
-            type: "tween",
-            duration: 0.8,
-          }}
-          viewport={{ once: true }}
+          
         >
           <img src={placeholder} alt="placeholder" />
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="child-seven grid-box"
-          variants={portfolioAnimation}
-          animate={controls}
-          transition={{
-            delay: 0.03,
-            type: "tween",
-            duration: 0.8,
-          }}
-          viewport={{ once: true }}
+         
         >
           <img src={placeholder} alt="placeholder" />
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className="child-eight grid-box"
-          variants={portfolioAnimation}
-          animate={controls}
-          transition={{
-            delay: 0.03,
-            type: "tween",
-            duration: 0.8,
-          }}
-          viewport={{ once: true }}
+         
         >
           <img src={placeholder} alt="placeholder" />
-        </motion.div>
+        </div>
       </div>
       <div className="portfolio-more">
         <span>Load More</span>
