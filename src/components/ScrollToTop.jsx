@@ -3,7 +3,7 @@ import React from 'react'
 const ScrollToTop = () => {
   return (
     <div>
-      ScrollToTop
+      {/* ScrollToTop */}
     </div>
   )
 }
