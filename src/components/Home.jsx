@@ -3,12 +3,16 @@ import styled from "styled-components";
 import home from "assets/home.png";
 import play from "assets/play.png";
 import Navbar from "./Navbar";
+import { motion } from "framer-motion";
+import { homeAnimation, homeInfoAnimation } from "animations";
 
 export default function Home  ()  {
   return (
     <Section id="home">
       <Navbar />
-      <div className="home">
+      <motion.div variants={homeAnimation}
+        transition={{ delay: 0.3, duration: 0.6, type: "tween" }}
+        className="home">
         <div className="content">
           <div className="title">
             <h1>Digital Crafter</h1>
@@ -22,8 +26,9 @@ export default function Home  ()  {
           </div>
           <img src={play} alt="Play Button" />
         </div>
-      </div>
-      <div className="info">
+      </motion.div>
+      <motion.div className="info"  variants={homeInfoAnimation}
+        transition={{ delay: 0.3, duration: 0.6, type: "tween" }}>
         <div className="grid">
         <div className="col">
             <strong>Agency</strong>
@@ -53,7 +58,7 @@ export default function Home  ()  {
             <p>10:00 to 18:00</p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Section>
   )
 }
