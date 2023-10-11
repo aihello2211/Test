@@ -95,6 +95,7 @@ const Section = styled.section`
     position: absolute;
     bottom: -6rem;
     right: 0;
+    width: 60%;
     background-color: var(--secondary-color);
     padding: 4rem;
     .grid {
@@ -121,6 +122,7 @@ const Section = styled.section`
     }
     .info {
       position: initial;
+      width: 100%;
       .grid {
         grid-template-columns: 1fr;
       }
